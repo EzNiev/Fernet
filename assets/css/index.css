@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    margin: 0;
 }
 
 html{
@@ -44,14 +45,14 @@ button:hover{
 }
 
 header{
-    background-color: rgb(228, 220, 214);
+    background-color: rgb(255, 255, 255);
 }
 
 header .logo{
     margin: 0;
     padding: 25px 30px;
     font-weight: bold;
-    color: rgb(255, 153, 0);
+    color: rgb(255, 115, 0);
     font-size: 2em;
 }
 
@@ -92,8 +93,16 @@ header a:hover{
     background-position: center center;
 }
 
-#somo-fernet{
+#hero h1{
+    color: white;
+}
 
+#hero button{
+    font-size: 1.75em;
+}
+
+#somo-fernet p{
+    text-decoration: none;
 }
 
 #somo-fernet .container{
@@ -109,11 +118,12 @@ header a:hover{
 }
 
 #nuestros-fernet .container{
-    padding: 100px 0px;
+    padding: 150px 12px;
 }
 
 #nuestros-fernet h2{
     margin-top: 0;
+    font-size: 3em;
 }
 
 #nuestros-fernet p{
@@ -124,8 +134,9 @@ header a:hover{
     background-position: center center;
     background-size: cover;
     padding: 12px;
-    margin: 12px;
+    margin: 20px;
     border-radius: 15px;
+    
 }
 
 .carta:first-child{
@@ -143,4 +154,99 @@ header a:hover{
 button a{
     text-decoration: none;
     color: black;
+}
+
+#razones .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#razones li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#convencido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    background-size: cover;
+    color: white;
+    height: 80vh;
+}
+
+#convencido h2{
+    font-size: 9vw;
+}
+
+#convencido button{
+    font-size: 5vw;
+}
+
+footer{
+    background-color: rgb(230, 230, 230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100)
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+@media(min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1920px;
+    }
+
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+
+    #somo-fernet .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somo-fernet .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    #somo-fernet h2{
+        margin-bottom: 50px;
+    }
+
+    #somo-fernet .img-container{
+        background-image: url("/assets/img/Fernet-Vertical.jpg");
+        background-size: cover;
+        background-position: auto;
+        height: 600px;
+        width: 400px;
+    }
 }
