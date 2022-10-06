@@ -18,8 +18,16 @@ h3{font-size: 2em;}
 p{font-size: 1.25em;}
 ul{ list-style: none;}
 
+a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Bodoni Condensed', 'Roboto', sans-serif;
+    margin: 0;
+    font-size: 1.25em;
+}
+
 button{
-    font-size: 1,5em;
+    font-size: 1.5em;
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 10px;
@@ -29,7 +37,9 @@ button{
 
 }
 
-
+a:hover{
+    color: rgb(231, 109, 9);
+}
 
 button:hover{
     background-color: rgb(161, 93, 37);
@@ -95,6 +105,7 @@ header a:hover{
 
 #hero h1{
     color: white;
+    font-size: 5em;
 }
 
 #hero button{
@@ -103,6 +114,9 @@ header a:hover{
 
 #somo-fernet p{
     text-decoration: none;
+}
+
+#somo-fernet a{
 }
 
 #somo-fernet .container{
@@ -180,6 +194,7 @@ button a{
 
 #convencido h2{
     font-size: 9vw;
+    padding: 30px;
 }
 
 #convencido button{
@@ -249,4 +264,83 @@ footer .container{
         height: 600px;
         width: 400px;
     }
+
+    
+    #nuestros-fernet .fernets{
+        display: flex;
+        justify-content: center;
+        height: auto;
+    }
+    
+    #nuestros-fernet p{
+        padding-top: 5em;
+        display: block;
+        margin-bottom: 30px;
+        height: auto;
+    }
+    
+    #nuestros-fernet h3{
+        margin-top: 0;
+    }
+
+    #nuestros-fernet button{
+        align-items: center;
+    }
+
+    #nuestros-fernet .carta{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-position-y: 0;
+        background-repeat: no-repeat;
+        background-color: rgba(73, 73, 73, 0.596);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        width: 30vw;
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/assets/img/FernetCheto.jpg);
+    }
+    
+    .carta:nth-child(2){
+        background-image: linear-gradient(0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/assets/img/FernetClasico2.jpg);
+    }
+    
+    .carta:nth-child(3){
+        background-image: linear-gradient(0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/assets/img/FernetPobre.jpg);
+    }
+
+    #razones{
+        background-image: url(/assets/img/Background-razones.jpg);
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 700px) 6em;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    #razones .container{
+        text-align: initial;
+    }
+
+    #razones ul{
+        margin-left: 100px;
+    }
+
+    #convencido h2{
+        font-size: 5em;
+    }
+
+    #convencido button{
+        font-size: 2em;
+    }
+
+    #footer .container{
+        justify-content: flex-end;
+    }
 }
+
+@media(min-width: 1200px){
+    #razones{
+        background-position: calc(100vw - 800px);
+    }
+}
+
