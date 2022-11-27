@@ -39,6 +39,7 @@ button{
 
 a:hover{
     color: rgb(231, 109, 9);
+    font-size: 2em;
 }
 
 button:hover{
